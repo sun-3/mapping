@@ -31,5 +31,6 @@ public class Course {
 
     @NotNull
     @OneToOne
-    private Subject coreSubject;
+    private Teacher headOfDept;
+
 }

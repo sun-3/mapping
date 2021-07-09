@@ -22,8 +22,8 @@ public class SubjectController {
     }
 
     @GetMapping("/{subjectId}")
-    public Subject getSubject(@PathVariable String subjectId){
-        return this.subjectService.getSubject(Long.parseLong(subjectId));
+    public Subject getSubject(@PathVariable Long subjectId){
+        return this.subjectService.getSubject(subjectId);
     }
 
     @PostMapping
