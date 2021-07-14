@@ -27,6 +27,7 @@ public class Course {
 
     @NotNull
     @OneToMany
+    @Column(name = "subjects")
     private List<Subject> subjects;
 
     @NotNull
